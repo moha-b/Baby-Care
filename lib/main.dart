@@ -1,8 +1,12 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'package:baby_care/Pages/OnBoarding/onboarding_page.dart';
+import 'package:baby_care/Pages/Registration/registration.dart';
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
+void main(){
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -10,11 +14,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Material App',
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: Center(
-          child: Text('Hello World'),
-        ),
+        body: RegistrationPage()
       ),
     );
   }
