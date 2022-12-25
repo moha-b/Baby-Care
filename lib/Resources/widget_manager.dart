@@ -34,6 +34,7 @@ class AppWidget{
     double? rounded,
     Color? color,
     Color? boarderColor,
+    Color? textColor,
   }){
     return Container(
       margin: EdgeInsets.only(bottom: marginBottom?? 20,top: marginTop?? 0),
@@ -45,7 +46,7 @@ class AppWidget{
           color: color?? AppColors.primary
       ),
       alignment: Alignment.center,
-      child: Text(text,style: getRegularStyle(color: AppColors.white,fontSize: 25),),
+      child: Text(text,style: getRegularStyle(color: textColor?? AppColors.white,fontSize: 25),),
     );
   }
 
