@@ -6,8 +6,8 @@ import 'package:iconsax/iconsax.dart';
 import '../../Resources/colors_manager.dart';
 import '../../Resources/styles_manager.dart';
 
-class FeedingSolid extends StatelessWidget {
-  const FeedingSolid({Key? key}) : super(key: key);
+class HealthMedication extends StatelessWidget {
+  const HealthMedication({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

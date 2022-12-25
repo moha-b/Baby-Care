@@ -32,7 +32,7 @@ class Categories extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   GestureDetector(
-                    onTap: ()=> Navigator.push(context, MaterialPageRoute(builder: (context) => MainFeeding(),)),
+                    onTap: ()=> Navigator.push(context, MaterialPageRoute(builder: (context) => FeedingMain(),)),
                     child: Container(
                         height: 170,
                         width: 175,

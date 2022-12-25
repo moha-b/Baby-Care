@@ -5,8 +5,8 @@ import 'package:baby_care/Resources/styles_manager.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
-class SleepingPage extends StatelessWidget {
-  const SleepingPage({Key? key}) : super(key: key);
+class SoothingSleeping extends StatelessWidget {
+  const SoothingSleeping({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

@@ -1,13 +1,12 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
 
+import 'package:baby_care/Resources/colors_manager.dart';
+import 'package:baby_care/Resources/styles_manager.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
-import '../../Resources/colors_manager.dart';
-import '../../Resources/styles_manager.dart';
-
-class FeedingSolid extends StatelessWidget {
-  const FeedingSolid({Key? key}) : super(key: key);
+class HealthTemperature extends StatelessWidget {
+  const HealthTemperature({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +20,7 @@ class FeedingSolid extends StatelessWidget {
             child: Column(
               children: [
                 Icon(
-                  Iconsax.medal,
+                  Iconsax.icon,
                   size: 100,
                   color: Colors.grey,
                 ),
@@ -45,7 +44,7 @@ class FeedingSolid extends StatelessWidget {
               onPressed: () {},
               style: ButtonStyle(
                   backgroundColor:
-                  MaterialStateProperty.all(AppColors.primary)),
+                      MaterialStateProperty.all(AppColors.primary)),
               child: Text(
                 "Add Feed",
                 style: getRegularStyle(color: Colors.white, fontSize: 20),

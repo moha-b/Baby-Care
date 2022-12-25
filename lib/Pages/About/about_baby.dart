@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'package:baby_care/Resources/routes_manager.dart';
 import 'package:flutter/material.dart';
 
 import '../../Resources/colors_manager.dart';
@@ -19,6 +20,9 @@ class _AboutBabyState extends State<AboutBaby> {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
+        iconTheme: IconThemeData(
+            color: Colors.black
+        ),
         title: Text("About Baby"),
         titleTextStyle: getRegularStyle(color: AppColors.black,fontSize: 20),
         backgroundColor: AppColors.white,
@@ -32,23 +36,23 @@ class _AboutBabyState extends State<AboutBaby> {
             SizedBox(
                 height: 25
             ),
-            AppWidget.textField(label: "Baby's Name"),
+            Box(text: "Baby's Name"),
             SizedBox(
                 height: 25
             ),
-            AppWidget.textField(label: "Date of Birth"),
+            Box(text: "Date of Birth"),
             SizedBox(
                 height: 25
             ),
-            AppWidget.textField(label: "Baby Gender"),
+            Box(text: "Baby Gender"),
             SizedBox(
                 height: 50
             ),
-            AppWidget.mainButton(rounded: 7,textColor: AppColors.primary,text: "Add Another Child",color: AppColors.lightPrimary,width: size.width),
+            Button(text: "Add Another Child",background: AppColors.lightPrimary,textColor: AppColors.primary),
             SizedBox(
                 height: size.height * 0.25
             ),
-            AppWidget.mainButton(rounded: 7,text: "Continue",width: size.width),
+            GestureDetector(onTap: ()=> Navigator.pushReplacementNamed(context, Routes.home),child: Button(text: "Continue"))
           ],
         ),
       ),

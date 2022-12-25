@@ -3,30 +3,28 @@
 import 'package:baby_care/Pages/Feeding/bottle_page.dart';
 import 'package:baby_care/Pages/Feeding/solid_page.dart';
 import 'package:baby_care/Pages/Feeding/summary.dart';
-import 'package:baby_care/Pages/Soothing/sleeping_page.dart';
-import 'package:baby_care/Pages/Soothing/summary.dart';
 import 'package:baby_care/Resources/colors_manager.dart';
 import 'package:baby_care/Resources/styles_manager.dart';
 import 'package:flutter/material.dart';
 
-class SoothingMain extends StatefulWidget {
-  const SoothingMain({Key? key}) : super(key: key);
+class HealthMain extends StatefulWidget {
+  const HealthMain({Key? key}) : super(key: key);
 
   @override
-  State<SoothingMain> createState() => _SoothingMainState();
+  State<HealthMain> createState() => _HealthMainState();
 }
 
-class _SoothingMainState extends State<SoothingMain>{
+class _HealthMainState extends State<HealthMain>{
 
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 2,
+      length: 3,
       child: Scaffold(
         appBar: AppBar(
           iconTheme: IconThemeData(color: Colors.black),
           backgroundColor: Colors.white,
-          title: Text('Feeding',style: getMediumStyle(color: Colors.black,fontSize: 20),),
+          title: Text('Health',style: getMediumStyle(color: Colors.black,fontSize: 20),),
           bottom: TabBar(
             labelColor: AppColors.primary,
             indicatorColor: AppColors.primary,
@@ -36,6 +34,9 @@ class _SoothingMainState extends State<SoothingMain>{
                 text: "BOTTLE",
               ),
               Tab(
+                text: "SOLIDS",
+              ),
+              Tab(
                 text: "SUMMARY",
               ),
             ],
@@ -43,8 +44,9 @@ class _SoothingMainState extends State<SoothingMain>{
         ),
         body: TabBarView(
           children:[
-            SoothingSleeping(),
-            SoothingSummary()
+            FeedingBottle(),
+            FeedingSolid(),
+            FeedingSummary(),
           ],
         ),
       ),

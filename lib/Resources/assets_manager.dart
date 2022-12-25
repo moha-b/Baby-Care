@@ -8,4 +8,7 @@ class AppAssets {
   static const String onboarding3 = "$imagePath/onBoarding3.png";
   static const String registrationBackground = "$imagePath/loginBackground.png";
   static const String google = "$imagePath/Google.png";
+  static const String sleep = "$imagePath/baby sleep.png";
+  static const String bottle = "$imagePath/baby-bottle.png";
+  static const String diaper = "$imagePath/diaperr.png";
 }

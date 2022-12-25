@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:baby_care/Resources/colors_manager.dart';
+import 'package:baby_care/Resources/routes_manager.dart';
 import 'package:baby_care/Resources/styles_manager.dart';
 import 'package:baby_care/Resources/widget_manager.dart';
 import 'package:flutter/material.dart';
@@ -13,6 +14,9 @@ class AboutMother extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
+        iconTheme: IconThemeData(
+          color: Colors.black
+        ),
         title: Text("About Mother"),
         titleTextStyle: getRegularStyle(color: AppColors.black,fontSize: 20),
         backgroundColor: AppColors.white,
@@ -26,23 +30,23 @@ class AboutMother extends StatelessWidget {
             SizedBox(
                 height: 25
             ),
-            AppWidget.textField(label: "Name"),
+            Box(text: "Name"),
             SizedBox(
               height: 25
             ),
-            AppWidget.textField(label: "Relationship"),
+            Box(text: "Relationship"),
             SizedBox(
                 height: 25
             ),
-            AppWidget.textField(label: "Length Unit"),
+            Box(text: "Length Unit"),
             SizedBox(
                 height: 25
             ),
-            AppWidget.textField(label: "Weight Unit"),
+            Box(text: "Weight Unit"),
             SizedBox(
                 height: size.height * 0.3
             ),
-            AppWidget.mainButton(rounded: 7,text: "Continue",width: size.width),
+            GestureDetector(onTap: ()=>Navigator.pushNamed(context, Routes.aboutBaby),child: Button(text: "Continue")),
           ],
         ),
       ),

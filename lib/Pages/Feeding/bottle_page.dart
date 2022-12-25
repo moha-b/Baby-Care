@@ -5,8 +5,8 @@ import 'package:baby_care/Resources/styles_manager.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
-class BottlePage extends StatelessWidget {
-  const BottlePage({Key? key}) : super(key: key);
+class FeedingBottle extends StatelessWidget {
+  const FeedingBottle({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

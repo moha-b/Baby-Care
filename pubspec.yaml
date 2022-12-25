@@ -33,6 +33,7 @@ dependencies:
   smooth_page_indicator:
   cupertino_icons: ^1.0.2
   iconsax:
+  flutter_svg:
 
 dev_dependencies:
   flutter_test:

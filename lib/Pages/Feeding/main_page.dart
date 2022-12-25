@@ -7,14 +7,14 @@ import 'package:baby_care/Resources/colors_manager.dart';
 import 'package:baby_care/Resources/styles_manager.dart';
 import 'package:flutter/material.dart';
 
-class MainFeeding extends StatefulWidget {
-  const MainFeeding({Key? key}) : super(key: key);
+class FeedingMain extends StatefulWidget {
+  const FeedingMain({Key? key}) : super(key: key);
 
   @override
-  State<MainFeeding> createState() => _MainFeedingState();
+  State<FeedingMain> createState() => _FeedingMainState();
 }
 
-class _MainFeedingState extends State<MainFeeding>{
+class _FeedingMainState extends State<FeedingMain>{
 
   @override
   Widget build(BuildContext context) {
@@ -44,8 +44,8 @@ class _MainFeedingState extends State<MainFeeding>{
         ),
         body: TabBarView(
           children:[
-            BottlePage(),
-            SolidPage(),
+            FeedingBottle(),
+            FeedingSolid(),
             FeedingSummary(),
           ],
         ),

@@ -5,9 +5,9 @@ import 'package:baby_care/Pages/OnBoarding/page2.dart';
 import 'package:baby_care/Pages/OnBoarding/page3.dart';
 import 'package:baby_care/Resources/colors_manager.dart';
 import 'package:baby_care/Resources/dimen_manager.dart';
+import 'package:baby_care/Resources/routes_manager.dart';
 import 'package:baby_care/Resources/strings_manager.dart';
 import 'package:baby_care/Resources/styles_manager.dart';
-import 'package:baby_care/Resources/widget_manager.dart';
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
@@ -65,22 +65,25 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
                 children: List.generate(pages.length, (index) => pages[index])),
           ),
           isLastPage
-              ? Container(
-                  margin: EdgeInsets.symmetric(horizontal: AppPadding.p16),
-                  alignment: Alignment.center,
-                  width: double.infinity,
-                  height: 50,
-                  decoration: BoxDecoration(
-                    shape: BoxShape.rectangle,
-                    borderRadius: BorderRadius.circular(8),
-                    color: AppColors.lightPrimary,
+              ? GestureDetector(
+                onTap: ()=> Navigator.pushReplacementNamed(context, Routes.login),
+                child: Container(
+                    margin: EdgeInsets.symmetric(horizontal: AppPadding.p16),
+                    alignment: Alignment.center,
+                    width: double.infinity,
+                    height: 50,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.rectangle,
+                      borderRadius: BorderRadius.circular(8),
+                      color: AppColors.lightPrimary,
+                    ),
+                    child: Text(
+                      AppStrings.done,
+                      style:
+                          getRegularStyle(color: AppColors.primary, fontSize: 15),
+                    ),
                   ),
-                  child: Text(
-                    AppStrings.done,
-                    style:
-                        getRegularStyle(color: AppColors.primary, fontSize: 15),
-                  ),
-                )
+              )
               : Container(
                   width: double.infinity,
                   height: 75,
