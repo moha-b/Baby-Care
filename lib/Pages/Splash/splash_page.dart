@@ -33,10 +33,6 @@ class _SplashPageState extends State<SplashPage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Image.asset(AppAssets.logo),
-                Text(
-                  AppStrings.appName,
-                  style: getBoldStyle(fontSize: 21, color: AppColors.primary),
-                ),
               ],
             ),
           ),

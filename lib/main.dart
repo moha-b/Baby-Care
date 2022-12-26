@@ -1,5 +1,4 @@
 // ignore_for_file: prefer_const_constructors
-import 'package:baby_care/Pages/Main/main_page.dart';
 import 'package:baby_care/Pages/Splash/splash_page.dart';
 import 'package:baby_care/Resources/routes_manager.dart';
 import 'package:flutter/material.dart';
@@ -17,7 +16,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       onGenerateRoute: RouteGenerator.getRoute,
       initialRoute: Routes.splash,
-      home: MainPage()
+      home: SplashPage()
     );
   }
 }

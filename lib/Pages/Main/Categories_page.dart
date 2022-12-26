@@ -52,8 +52,7 @@ class Categories extends StatelessWidget {
                     child: Cat(widget: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Transform.rotate(angle: 30.8,
-                        child: Image.asset(AppAssets.sleep,scale: 0.6,)),
+                        Image.asset(AppAssets.soothing,scale: 1,),
                         SizedBox(height: 5,),
                         Text("Soothing",style: getMediumStyle(color: AppColors.grey,fontSize: 25),)
                       ],
@@ -69,8 +68,7 @@ class Categories extends StatelessWidget {
                       child: Cat(widget: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Transform.rotate(angle: 30.8,
-                              child: Image.asset(AppAssets.bottle,scale: 0.6,)),
+                          Image.asset(AppAssets.health,scale: 1,),
                           SizedBox(height: 5,),
                           Text("Health",style: getMediumStyle(color: AppColors.grey,fontSize: 25),)
                         ],
@@ -81,8 +79,7 @@ class Categories extends StatelessWidget {
                       child: Cat(widget: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Transform.rotate(angle: 30.8,
-                              child: Image.asset(AppAssets.bottle,scale: 0.6,)),
+                          Image.asset(AppAssets.diaper,scale: 1,color: AppColors.primary,),
                           SizedBox(height: 5,),
                           Text("Nappy",style: getMediumStyle(color: AppColors.grey,fontSize: 25),)
                         ],
@@ -98,8 +95,7 @@ class Categories extends StatelessWidget {
                       child: Cat(widget: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Transform.rotate(angle: 30.8,
-                              child: Image.asset(AppAssets.bottle,scale: 0.6,)),
+                          Image.asset(AppAssets.growth,scale: 1,),
                           SizedBox(height: 5,),
                           Text("Growth",style: getMediumStyle(color: AppColors.grey,fontSize: 25),)
                         ],

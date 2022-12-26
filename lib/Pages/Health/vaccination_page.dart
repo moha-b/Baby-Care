@@ -1,13 +1,14 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'package:baby_care/Resources/assets_manager.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
 import '../../Resources/colors_manager.dart';
 import '../../Resources/styles_manager.dart';
 
-class HealthMedication extends StatelessWidget {
-  const HealthMedication({Key? key}) : super(key: key);
+class HealthVaccination extends StatelessWidget {
+  const HealthVaccination({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -20,16 +21,12 @@ class HealthMedication extends StatelessWidget {
           child: SizedBox(
             child: Column(
               children: [
-                Icon(
-                  Iconsax.medal,
-                  size: 100,
-                  color: Colors.grey,
-                ),
+                Image.asset(AppAssets.vaccination),
                 SizedBox(
-                  height: 5,
+                  height: 10,
                 ),
                 Text(
-                  "No Feed to Show",
+                  "No Vaccination to Show",
                   style: getRegularStyle(color: Colors.grey, fontSize: 20),
                 ),
               ],
@@ -47,7 +44,7 @@ class HealthMedication extends StatelessWidget {
                   backgroundColor:
                   MaterialStateProperty.all(AppColors.primary)),
               child: Text(
-                "Add Feed",
+                "Add Vaccination",
                 style: getRegularStyle(color: Colors.white, fontSize: 20),
               ),
             ),

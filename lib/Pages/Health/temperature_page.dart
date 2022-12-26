@@ -5,6 +5,8 @@ import 'package:baby_care/Resources/styles_manager.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
+import '../../Resources/assets_manager.dart';
+
 class HealthTemperature extends StatelessWidget {
   const HealthTemperature({Key? key}) : super(key: key);
 
@@ -19,16 +21,12 @@ class HealthTemperature extends StatelessWidget {
           child: SizedBox(
             child: Column(
               children: [
-                Icon(
-                  Iconsax.icon,
-                  size: 100,
-                  color: Colors.grey,
-                ),
+                Image.asset(AppAssets.temperature),
                 SizedBox(
-                  height: 5,
+                  height: 10,
                 ),
                 Text(
-                  "No Feed to Show",
+                  "No temperature to Show",
                   style: getRegularStyle(color: Colors.grey, fontSize: 20),
                 ),
               ],
@@ -46,7 +44,7 @@ class HealthTemperature extends StatelessWidget {
                   backgroundColor:
                       MaterialStateProperty.all(AppColors.primary)),
               child: Text(
-                "Add Feed",
+                "Add Temperature",
                 style: getRegularStyle(color: Colors.white, fontSize: 20),
               ),
             ),

@@ -26,14 +26,14 @@ class _SoothingMainState extends State<SoothingMain>{
         appBar: AppBar(
           iconTheme: IconThemeData(color: Colors.black),
           backgroundColor: Colors.white,
-          title: Text('Feeding',style: getMediumStyle(color: Colors.black,fontSize: 20),),
+          title: Text('Soothing',style: getMediumStyle(color: Colors.black,fontSize: 20),),
           bottom: TabBar(
             labelColor: AppColors.primary,
             indicatorColor: AppColors.primary,
             unselectedLabelColor: AppColors.grey,
             tabs:[
               Tab(
-                text: "BOTTLE",
+                text: "SLEEPING",
               ),
               Tab(
                 text: "SUMMARY",

@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'package:baby_care/Resources/assets_manager.dart';
 import 'package:flutter/material.dart';
-import 'package:iconsax/iconsax.dart';
 
 import '../../Resources/colors_manager.dart';
 import '../../Resources/styles_manager.dart';
@@ -16,17 +16,13 @@ class FeedingSolid extends StatelessWidget {
         Expanded(flex: 1, child: Container()),
         Expanded(flex: 1, child: Container()),
         Expanded(
-          flex: 3,
+          flex: 4,
           child: SizedBox(
             child: Column(
               children: [
-                Icon(
-                  Iconsax.medal,
-                  size: 100,
-                  color: Colors.grey,
-                ),
+                Image.asset(AppAssets.meal),
                 SizedBox(
-                  height: 5,
+                  height: 10,
                 ),
                 Text(
                   "No Feed to Show",

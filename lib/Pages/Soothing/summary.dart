@@ -29,7 +29,7 @@ class SoothingSummary extends StatelessWidget {
                   height: 5,
                 ),
                 Text(
-                  "No Feed to Show",
+                  "No Data to Show",
                   style: getRegularStyle(color: Colors.grey, fontSize: 20),
                 ),
               ],

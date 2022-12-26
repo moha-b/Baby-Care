@@ -70,7 +70,7 @@ Widget RecentCard({required Widget widget, Color? background}) {
     padding: EdgeInsets.all(16),
     decoration: BoxDecoration(
         color: background ?? Colors.white,
-        borderRadius: BorderRadius.circular(25)),
+        borderRadius: BorderRadius.circular(20)),
     child: widget,
   );
 }

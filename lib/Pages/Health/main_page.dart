@@ -3,9 +3,13 @@
 import 'package:baby_care/Pages/Feeding/bottle_page.dart';
 import 'package:baby_care/Pages/Feeding/solid_page.dart';
 import 'package:baby_care/Pages/Feeding/summary.dart';
+import 'package:baby_care/Pages/Health/temperature_page.dart';
+import 'package:baby_care/Pages/Health/vaccination_page.dart';
 import 'package:baby_care/Resources/colors_manager.dart';
 import 'package:baby_care/Resources/styles_manager.dart';
 import 'package:flutter/material.dart';
+
+import 'medication_page.dart';
 
 class HealthMain extends StatefulWidget {
   const HealthMain({Key? key}) : super(key: key);
@@ -31,22 +35,22 @@ class _HealthMainState extends State<HealthMain>{
             unselectedLabelColor: AppColors.grey,
             tabs:[
               Tab(
-                text: "BOTTLE",
+                text: "TEMPERATURE",
               ),
               Tab(
-                text: "SOLIDS",
+                text: "MEDICATION",
               ),
               Tab(
-                text: "SUMMARY",
+                text: "VACCINATION",
               ),
             ],
           ),
         ),
         body: TabBarView(
           children:[
-            FeedingBottle(),
-            FeedingSolid(),
-            FeedingSummary(),
+            HealthTemperature(),
+            HealthMedication(),
+            HealthVaccination(),
           ],
         ),
       ),
