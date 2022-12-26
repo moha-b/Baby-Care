@@ -19,4 +19,7 @@ class AppAssets {
   static const String temperature = "$imagePath/temperature.png";
   static const String medication = "$imagePath/medication.png";
   static const String vaccination = "$imagePath/injection-vaccine.png";
+  static const String child = "$imagePath/child.png";
+  static const String mum = "$imagePath/mum.png";
+  static const String image = "$imagePath/image 2.png";
 }

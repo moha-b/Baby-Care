@@ -30,45 +30,47 @@ class _HomeState extends State<Home> {
             margin: EdgeInsets.all(8),
             decoration: BoxDecoration(
                 image: DecorationImage(
-                    image: AssetImage(AppAssets.registrationBackground),
+                    image: AssetImage(AppAssets.image),
                     fit: BoxFit.cover),
                 borderRadius: BorderRadius.circular(20)),
-            alignment: Alignment.topLeft,
             child: Stack(
               children: [
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text("Good Afternoon",
-                        style: getSemiBoldStyle(
-                            color: AppColors.white, fontSize: 25)),
-                    SizedBox(
-                      height: 5,
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: [
-                        Text(
-                          "Mohab & Saif",
+                Positioned(
+                  bottom: 1,
+                  child: Column(
+                    children: [
+                      Text("Good Afternoon",
                           style: getSemiBoldStyle(
-                              color: AppColors.white, fontSize: 25),
-                        ),
-                      ],
-                    ),
-                  ],
+                              color: AppColors.white, fontSize: 30)),
+                      SizedBox(
+                        height: 5,
+                      ),
+                      Row(
+                        children: [
+                          Text(
+                            "Nada & Mohamed",
+                            style: getSemiBoldStyle(
+                                color: AppColors.white, fontSize: 22),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
                 ),
                 Align(
                   alignment: Alignment.topRight,
                   child: Column(
                     children: [
                       CircleAvatar(
-                        maxRadius: 40,
+                        maxRadius: 45,
+                        child: Image.asset(AppAssets.mum,fit: BoxFit.cover,),
                       ),
                       SizedBox(
                         height: 10,
                       ),
                       CircleAvatar(
-                        maxRadius: 25,
+                        maxRadius: 35,
+                        child: Image.asset(AppAssets.child,fit: BoxFit.cover,),
                       ),
                     ],
                   ),
@@ -138,7 +140,6 @@ class _HomeState extends State<Home> {
                         Align(alignment: Alignment.topLeft,child: Text("5 min",style: getSemiBoldStyle(color: Colors.black,fontSize: 20),),),
                         SizedBox(height: 5,),
                         Align(alignment: Alignment.topLeft,child: Text("baby is not ready for this yet",style: getRegularStyle(color: Colors.black,fontSize: 15),),),
-
                       ],
                     )),
                   ],

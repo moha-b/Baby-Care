@@ -4,7 +4,6 @@ import 'package:baby_care/Resources/assets_manager.dart';
 import 'package:baby_care/Resources/colors_manager.dart';
 import 'package:baby_care/Resources/styles_manager.dart';
 import 'package:flutter/material.dart';
-import 'package:iconsax/iconsax.dart';
 
 class FeedingBottle extends StatelessWidget {
   const FeedingBottle({Key? key}) : super(key: key);
@@ -13,14 +12,13 @@ class FeedingBottle extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Expanded(flex: 1, child: Container()),
-        Expanded(flex: 1, child: Container()),
+        Expanded(flex: 2, child: Container()),
         Expanded(
           flex: 3,
           child: SizedBox(
             child: Column(
               children: [
-                Transform.rotate(angle: 30.7,child: Image.asset(AppAssets.bottle,color: Colors.grey,scale: 0.4,)),
+                Transform.rotate(angle: 30.7,child: Image.asset(AppAssets.bottle,color: Colors.grey,scale: 0.5,)),
                 SizedBox(
                   height: 10,
                 ),
